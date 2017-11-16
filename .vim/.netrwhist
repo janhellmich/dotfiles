@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/Users/janhellmich/Developer/crypto_advisor'
+let g:netrw_dirhist_2='/Users/janhellmich/Developer/crypto_advisor/crypto_advisor'
+let g:netrw_dirhist_3='/Users/janhellmich/Developer/crypto_advisor'
+let g:netrw_dirhist_4='/Users/janhellmich/Developer/crypto_advisor/crypto_advisor'
+let g:netrw_dirhist_5='/Users/janhellmich/Developer/crypto_advisor'
+let g:netrw_dirhist_6='/Users/janhellmich/Developer/crypto_advisor/crypto_advisor'
+let g:netrw_dirhist_7='/Users/janhellmich/Developer/crypto_advisor'
+let g:netrw_dirhist_8='/Users/janhellmich/Developer/crypto_advisor/crypto_advisor'
+let g:netrw_dirhist_9='/Users/janhellmich/Education/CS_7646/ML4T_PRIVATE/assess_portfolio'

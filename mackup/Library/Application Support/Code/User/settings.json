@@ -1,0 +1,12 @@
+{
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.colorTheme": "Material Palenight for Operator Mono",
+    "editor.fontFamily": "Operator Mono",
+    "editor.fontSize": 14,
+    "editor.wrappingIndent": "indent",
+    "spellright.language": "en",
+    "sublimeTextKeymap.promptV3Features": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.snippetSuggestions": "top",
+    "editor.formatOnPaste": true
+}
