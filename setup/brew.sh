@@ -31,6 +31,7 @@ brew install grep
 # Install Binaries
 brew install git
 brew install tree
+brew install mackup
 brew install mas
 brew install node
 brew install npm
@@ -44,6 +45,7 @@ brew install vim
 brew cask install atom
 brew cask install docker
 brew cask install firefox
+brew cask install flux
 brew cask install dropbox
 brew cask install google-chrome
 brew cask install iterm2
