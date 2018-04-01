@@ -1,5 +1,4 @@
-execute pathogen#infect() 
-let mapleader=","       " leader is comma
+let mapleader="," 
 
 " NERD tree plugin
 map <C-n> :NERDTreeToggle<CR>
