@@ -7,11 +7,11 @@ function mkcdir()
 function mltremote() 
 {
   dir=${PWD##*/}
-  dir_path="~/ML4T_PRIVATE/$dir"
-  ssh mlt "mkdir -p $dir_path"
-  scp *.py mlt:"$dir_path/."
+  dir_path="~/ml4t/$dir"
+  ssh buffet "mkdir -p $dir_path"
+  scp *.py buffet:"$dir_path/."
   echo "============================== running on server ==============================="
-  ssh mlt "export PYTHONPATH='../:.'; cd ML4T_PRIVATE/$dir; python $1" 
+  ssh buffet "export PYTHONPATH='../:.'; cd ml4t/$dir; python $1" 
 }
 
 function dcl() 

@@ -8,3 +8,5 @@ email = jlhellmich@gmail.com
 
 [credential]
 	helper = osxkeychain
+[core]
+	excludesfile = /Users/janhellmich/.gitignore_global

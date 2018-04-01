@@ -1,8 +1,13 @@
 # Shortcuts
-alias copyssh="pbcopy < $HOME/.ssh/id_rsa.pub"
 alias reloaddns="dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
 alias weather="curl -4 http://wttr.in"
 alias shrug="echo '¯\_(ツ)_/¯' | pbcopy"
+alias ali="vim $DOTFILES/.aliases.sh"
+alias func="vim $DOTFILES/.functions.sh"
+
+# SSH aliases
+alias copyssh="pbcopy < $HOME/.ssh/id_rsa.pub"
+alias sshconfig="vim ~/.ssh/config" 
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
@@ -33,14 +38,13 @@ alias prof="vim ~/.zshrc"
 alias reprof=". ~/.zshrc"
 
 # Navigation aliases
-alias d="cd ~/Documents/Dropbox"
+alias c="cd ~/code"
+alias db="cd ~/Dropbox"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
-alias ws="cd ~/Developer"
-alias ed="cd ~/Education"
-alias ms="cd ~/Developer/monetis"
-alias mlt="cd ~/Education/CS_7646/ML4T_PRIVATE"
-
+alias ms="cd ~/code/monetis"
+alias oms="cd ~/code/omscs"
+alias ns="cd ~/code/omscs/network_security"
 # Directories
 alias dotfiles="cd $DOTFILES"
 alias library="cd $HOME/Library"
@@ -66,3 +70,4 @@ alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
 
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
+
