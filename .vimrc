@@ -10,8 +10,18 @@ nnoremap <leader>f :CtrlP .<ENTER>
 set tags=./.tags;/
 
 " Color scheme
-set background=dark
+set background=light
 colorscheme solarized
+syntax enable           
+
+" Italic Font
+" note: this has to come after the color scheme stuff is loaded
+" see: https://stackoverflow.com/questions/3494435/vimrc-make-comments-italic
+set t_ZH=[3m
+set t_ZR=[23m
+highlight htmlArg cterm=italic
+highlight Comment cterm=italic
+highlight Type    cterm=italic
 
 " Copy and past to system clipboard
 set clipboard=unnamed
@@ -28,7 +38,6 @@ set expandtab       " tabs are spaces
 set autoindent
 
 " UI config
-syntax enable           " enable syntax highlighting
 set number              " show line numbers
 set showcmd             " show command in bottom bar
 set cursorline          " highlight current line

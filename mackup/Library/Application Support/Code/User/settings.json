@@ -1,6 +1,6 @@
 {
     "workbench.iconTheme": "vscode-icons",
-    "workbench.colorTheme": "Material Palenight for Operator Mono",
+    "workbench.colorTheme": "Tomorrow Operator Mono",
     "editor.fontFamily": "Operator Mono",
     "editor.fontSize": 14,
     "editor.wrappingIndent": "indent",
