@@ -20,7 +20,7 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Load the shell dotfiles
 # Note: This is currently done at the end since the ls command otherwise gets overwritten by zsh syntax highlighting
-for file in ~/.{path,exports,aliases,functions}.sh; do
+for file in ~/.{path,exports,aliases,functions,unsynced}.sh; do
 	[ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;

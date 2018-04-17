@@ -2,7 +2,6 @@
 
 export DOTFILES=$HOME/dotfiles
 
-cd $DOTFILES
 GLOBIGNORE=.:..:.git:.gitmodules
 
 detached='false'
@@ -16,6 +15,7 @@ while getopts "bd" flag; do
     esac
 done
 
+cd $DOTFILES/sync/
 for file in .*; do
     [ -e "$file" ] || continue
     if [ -e "$HOME/$file" ] && [ "$backup" = 'true' ]; then
@@ -24,10 +24,14 @@ for file in .*; do
     fi
 
     if [ "$detached" = 'true' ]; then
-        echo "copy $DOTFILES/$file → $HOME/$file"
-        cp -iR "$DOTFILES/$file" "$HOME/$file"
+        echo "copy $DOTFILES/sync/$file → $HOME/$file"
+        cp -iR "$DOTFILES/sync/$file" "$HOME/$file"
     else
-        echo "link $DOTFILES/$file → $HOME/$file"
-        ln -shi "$DOTFILES/$file" "$HOME/$file"
+        echo "link $DOTFILES/sync/$file → $HOME/$file"
+        ln -sniF "$DOTFILES/sync/$file" "$HOME/$file"
     fi
 done
+
+# Add a file that allows to specify commands, functions, etc that are not synced across systems
+[ -e "$HOME/.unsynced.sh" ] || touch "$HOME/.unsynced.sh"
+

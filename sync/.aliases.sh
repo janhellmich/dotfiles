@@ -2,8 +2,8 @@
 alias reloaddns="dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
 alias weather="curl -4 http://wttr.in"
 alias shrug="echo '¯\_(ツ)_/¯' | pbcopy"
-alias ali="vim $DOTFILES/.aliases.sh"
-alias func="vim $DOTFILES/.functions.sh"
+alias ali="vim $HOME/.aliases.sh"
+alias func="vim $HOME/.functions.sh"
 
 # SSH aliases
 alias copyssh="pbcopy < $HOME/.ssh/id_rsa.pub"
