@@ -40,6 +40,10 @@ brew install trash
 brew install wget
 brew install jq
 brew install vim
+brew install the_silver_searcher
+brew install fzf
+# To install useful key bindings and fuzzy completion:
+$(brew --prefix)/opt/fzf/install
 
 # Apps
 brew cask install atom

@@ -3,8 +3,9 @@ let mapleader=" "
 " NERD tree plugin
 map <C-n> :NERDTreeToggle<CR>
 
-" CtrlP search
-nnoremap <leader>f :CtrlP .<ENTER>
+" FZF search
+nnoremap <leader>f :Ag .<ENTER>
+nnoremap <leader>t :FZF .<ENTER>
 
 " Set tags file location
 set tags=./tags,tags;$HOME
@@ -33,9 +34,9 @@ set backspace=indent,eol,start
 
 " Tab default setings. modify per filetype in ~/.vim/indent/<filetype>.vim
 set textwidth=120   " break lines when line length increases
-set tabstop=4       " number of visual spaces per TAB
-set softtabstop=4   " number of spaces in tab when editing
-set shiftwidth=4    " number of spaces to use for auto indent
+set tabstop=2       " number of visual spaces per TAB
+set softtabstop=2   " number of spaces in tab when editing
+set shiftwidth=2    " number of spaces to use for auto indent
 set expandtab       " tabs are spaces
 set autoindent
 

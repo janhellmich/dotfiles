@@ -4,9 +4,6 @@ typeset -U path
 # Make export variables available
 source ~/.exports.sh
 
-# virtualenv wrapper setup
-source /usr/local/bin/virtualenvwrapper.sh
-
 # ZSH setup
 ZSH_THEME="" # empty because of pure prompt
 plugins=(git)
@@ -24,3 +21,5 @@ for file in ~/.{path,exports,aliases,functions,unsynced}.sh; do
 	[ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
