@@ -1,4 +1,4 @@
-let mapleader="," 
+let mapleader=" " 
 
 " NERD tree plugin
 map <C-n> :NERDTreeToggle<CR>
@@ -7,12 +7,14 @@ map <C-n> :NERDTreeToggle<CR>
 nnoremap <leader>f :CtrlP .<ENTER>
 
 " Set tags file location
-set tags=./.tags;/
+set tags=./tags,tags;$HOME
 
 " Color scheme
 set background=light
 colorscheme solarized
 syntax enable           
+
+nnoremap <leader><space> :noh<CR>    " Clear search highlights
 
 " Italic Font
 " note: this has to come after the color scheme stuff is loaded
@@ -42,6 +44,7 @@ set number              " show line numbers
 set showcmd             " show command in bottom bar
 set cursorline          " highlight current line
 filetype indent on      " load filetype-specific indent files
+filetype plugin indent on      " load filetype-specific indent from plugin files
 set wildmenu            " visual autocomplete for command menu
 set showmatch           " highlight matching [{()}]
 
