@@ -16,3 +16,6 @@
 [submodule "sync/.vim/pack/plugins/start/fzf"]
 	path = sync/.vim/pack/plugins/start/fzf
 	url = https://github.com/junegunn/fzf.git
+[submodule "sync/.vim/pack/plugins/start/vim-airline"]
+	path = sync/.vim/pack/plugins/start/vim-airline
+	url = https://github.com/vim-airline/vim-airline.git
