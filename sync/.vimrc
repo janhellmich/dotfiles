@@ -1,4 +1,4 @@
-let mapleader=" " 
+let mapleader=" "
 
 " NERD tree plugin
 map <C-n> :NERDTreeToggle<CR>
@@ -10,12 +10,30 @@ nnoremap <leader>t :FZF .<ENTER>
 " Set tags file location
 set tags=./tags,tags;$HOME
 
+" Disable typescript syntaxcheck on save
+let g:tsuquyomi_disable_quickfix = 1
+
 " Color scheme
 set background=light
 colorscheme solarized
-syntax enable           
+syntax enable
+
+" Change cursor shape between insert and normal mode in iTerm2.app
+if $TERM_PROGRAM =~ "iTerm"
+    let &t_SI = "\<Esc>]50;CursorShape=1\x7" " Vertical bar in insert mode
+    let &t_EI = "\<Esc>]50;CursorShape=0\x7" " Block in normal mode
+endif
 
 nnoremap <leader><space> :noh<CR>    " Clear search highlights
+
+" Remove trailing whitespace
+fun! <SID>StripTrailingWhitespaces()
+    let l = line(".")
+    let c = col(".")
+    %s/\s\+$//e
+    call cursor(l, c)
+endfun
+autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 
 " Italic Font
 " note: this has to come after the color scheme stuff is loaded
@@ -43,7 +61,6 @@ set autoindent
 " UI config
 set number              " show line numbers
 set showcmd             " show command in bottom bar
-set cursorline          " highlight current line
 filetype indent on      " load filetype-specific indent files
 filetype plugin indent on      " load filetype-specific indent from plugin files
 set wildmenu            " visual autocomplete for command menu
