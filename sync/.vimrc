@@ -3,10 +3,6 @@ let mapleader=" "
 " NERD tree plugin
 map <C-n> :NERDTreeToggle<CR>
 
-" FZF search
-nnoremap <leader>f :Ag .<ENTER>
-nnoremap <leader>t :FZF .<ENTER>
-
 " Set tags file location
 set tags=./tags,tags;$HOME
 
@@ -24,7 +20,6 @@ if $TERM_PROGRAM =~ "iTerm"
     let &t_EI = "\<Esc>]50;CursorShape=0\x7" " Block in normal mode
 endif
 
-nnoremap <leader><space> :noh<CR>    " Clear search highlights
 
 " Remove trailing whitespace
 fun! <SID>StripTrailingWhitespaces()
@@ -60,6 +55,7 @@ set autoindent
 
 " UI config
 set number              " show line numbers
+set relativenumber      " show relative numbers
 set showcmd             " show command in bottom bar
 filetype indent on      " load filetype-specific indent files
 filetype plugin indent on      " load filetype-specific indent from plugin files
@@ -70,8 +66,14 @@ set showmatch           " highlight matching [{()}]
 set incsearch           " search as characters are entered
 set hlsearch            " highlight matches
 
+" FZF search
+nnoremap <leader>f :Ag .<ENTER>
+nnoremap <leader>t :FZF .<ENTER>
+
 " edit vimrc/zshrc and load vimrc bindings
 nnoremap <leader>ev :vsp ~/.vimrc<CR>
 nnoremap <leader>ez :vsp ~/.zshrc<CR>
 nnoremap <leader>sv :source ~/.vimrc<CR>
 nnoremap <leader>sz :source ~/.zshrc<CR>
+
+nnoremap <leader><space> :noh<CR>    " Clear search highlights

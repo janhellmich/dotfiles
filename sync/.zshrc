@@ -4,6 +4,8 @@ typeset -U path
 # Make export variables available
 source ~/.exports.sh
 
+[[ -e /usr/local/bin/virtualenvwrapper.sh ]] && source /usr/local/bin/virtualenvwrapper.sh
+
 # ZSH setup
 ZSH_THEME="" # empty because of pure prompt
 plugins=(git)
