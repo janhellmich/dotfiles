@@ -1,0 +1,20 @@
+# Enable colors for specific modules
+zstyle ':prezto:module:syntax-highlighting' color 'yes'
+
+# Don't use the git aliases
+zstyle ':prezto:module:git:alias' skip 'yes'
+
+# Set the Prezto modules to load (browse modules).
+# The order matters.
+zstyle ':prezto:load' pmodule \
+  'utility' \
+  'directory' \
+  'completion' \
+  'git' \
+  'syntax-highlighting' \
+  'history' \
+  'history-substring-search' \
+  'prompt'
+
+zstyle ':prezto:module:prompt' theme 'pure'
+
