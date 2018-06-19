@@ -12,5 +12,6 @@ export EDITOR=vim
 export WORKON_HOME=~/.virtualenvs
 export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python2
 
-# FZF fuzzy search 
+# FZF fuzzy search
 export FZF_DEFAULT_OPTS='--height 40% --border'
+export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
