@@ -4,9 +4,9 @@
 name = Jan Hellmich
 email = jlhellmich@gmail.com
 [alias]
-    hist = "log --pretty=format:'%C(yellow)[%ad]%C(reset) %C(green)[%h]%C(reset) | %C(red)%s %C(white){{%an}}%C(reset) %C(blue)%d%C(reset)' --graph --date=short"
+  hist = "log --pretty=format:'%C(yellow)[%ad]%C(reset) %C(green)[%h]%C(reset) | %C(red)%s %C(white){{%an}}%C(reset) %C(blue)%d%C(reset)' --graph --date=short"
 
 [credential]
-	helper = osxkeychain
+  helper = osxkeychain
 [core]
-	excludesfile = /Users/janhellmich/.gitignore_global
+  excludesfile = /Users/janhellmich/.gitignore_global
