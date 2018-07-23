@@ -7,7 +7,7 @@ alias func="vim $HOME/.functions.sh"
 
 # SSH aliases
 alias copyssh="pbcopy < $HOME/.ssh/id_rsa.pub"
-alias sshconfig="vim ~/.ssh/config" 
+alias sshconfig="vim ~/.ssh/config"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
@@ -33,6 +33,11 @@ alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
+# Git aliases
+alias gst="git status"
+alias gco="git checkout"
+alias gb="git branch"
+
 # Profile aliases
 alias prof="vim ~/.zshrc"
 alias reprof=". ~/.zshrc"
@@ -45,6 +50,7 @@ alias dt="cd ~/Desktop"
 alias ms="cd ~/code/monetis"
 alias oms="cd ~/code/omscs"
 alias ns="cd ~/code/omscs/network_security"
+
 # Directories
 alias dotfiles="cd $DOTFILES"
 alias library="cd $HOME/Library"

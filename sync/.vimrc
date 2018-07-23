@@ -26,7 +26,6 @@ set autoindent
 
 " UI config
 set number
-set relativenumber
 set showcmd
 set showmatch
 
@@ -40,6 +39,8 @@ set wildmode=longest:full,full
 " search
 set incsearch
 set hlsearch
+set ignorecase
+set smartcase
 " clear search highlight
 nnoremap <leader><space> :noh<CR>
 
