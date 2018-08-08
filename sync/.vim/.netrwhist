@@ -1,11 +1,4 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =9
-let g:netrw_dirhist_1='/Users/janhellmich/src/server/paper/etherpad/src/client/admin'
-let g:netrw_dirhist_2='/Users/janhellmich/src/server/paper/etherpad/src/static/css/admin'
-let g:netrw_dirhist_3='/Users/janhellmich/src/server/paper/etherpad/src/client/admin'
-let g:netrw_dirhist_4='/Users/janhellmich/src/server/paper/etherpad/src/client/admin/sqs_tools'
-let g:netrw_dirhist_5='/Users/janhellmich/src/server/paper/etherpad/src/client/admin'
-let g:netrw_dirhist_6='/Users/janhellmich/src/server/paper/etherpad/src/client/admin/sqs_tools'
-let g:netrw_dirhist_7='/Users/janhellmich/src/server/paper/etherpad/src/server/admin'
-let g:netrw_dirhist_8='/Users/janhellmich/src/server'
-let g:netrw_dirhist_9='/Users/janhellmich/src/server/metaserver'
+let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_1='/Users/janhellmich/src/server/paper/etherpad/src/server/infra/tasks'
+let g:netrw_dirhist_2='/Users/janhellmich/src/server/paper/etherpad/src/definitions'
