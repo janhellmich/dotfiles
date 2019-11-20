@@ -1,22 +1,32 @@
+function remove_submodule()
+{
+  # Remove the submodule entry from .git/config
+  git submodule deinit -f "$1"
+  # Remove the submodule directory from the superproject's .git/modules directory
+  rm -rf .git/modules/"$1"
+  # Remove the entry in .gitmodules and remove the submodule directory located at path/to/submodule
+  git rm -f "$1"
+}
+
 function mkcdir()
 {
   mkdir -p -- "$1" &&
   cd -P -- "$1"
 }
 
-function mltremote() 
+function mltremote()
 {
   dir=${PWD##*/}
   dir_path="~/ml4t/$dir"
   ssh buffet "mkdir -p $dir_path"
   scp *.py buffet:"$dir_path/."
   echo "============================== running on server ==============================="
-  ssh buffet "export PYTHONPATH='../:.'; cd ml4t/$dir; python $1" 
+  ssh buffet "export PYTHONPATH='../:.'; cd ml4t/$dir; python $1"
 }
 
-function dcl() 
+function dcl()
 {
-  docker-compose -f local.yml $@ 
+  docker-compose -f local.yml $@
 }
 
 # Determine size of a file or total size of a directory

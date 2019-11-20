@@ -18,5 +18,6 @@
         "**/.DS_Store": true,
         "**/*.pyc": true,
         "__pycache__": true
-    }
+    },
+    "window.zoomLevel": 1
 }

@@ -7,7 +7,7 @@ alias func="vim $HOME/.functions.sh"
 
 # SSH aliases
 alias copyssh="pbcopy < $HOME/.ssh/id_rsa.pub"
-alias sshconfig="vim ~/.ssh/config" 
+alias sshconfig="vim ~/.ssh/config"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
@@ -70,4 +70,9 @@ alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
 
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
+
+# Git
+alias gco='git checkout'
+alias gst='git status'
+
 

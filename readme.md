@@ -2,7 +2,6 @@
 
 ## Set up a new mac from scratch
 
-1. move `~/.ssh` folder to new machine
 1. install xcode, accept license agreement, and install command line tools with `xcode-select --install`
 1. clone this repo and cd into it: `git clone --recurse-submodules git@github.com:janhellmich/dotfiles.git ~/dotfiles`
 1. run `bash setup/bootstrap.sh`
@@ -17,3 +16,7 @@
 1. run `bash setup/symlink.sh`
   - use the `-d` flag for detached mode. This will copy files vs. symlink them
   - use the `-b` flag to make backups of existing files
+
+## Adding new Vim modules
+
+1. Make sure to use `git submodule` instead of `git clone`
