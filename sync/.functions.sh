@@ -1,19 +1,3 @@
-function mkcdir()
-{
-  mkdir -p -- "$1" &&
-  cd -P -- "$1"
-}
-
-function mltremote() 
-{
-  dir=${PWD##*/}
-  dir_path="~/ml4t/$dir"
-  ssh buffet "mkdir -p $dir_path"
-  scp *.py buffet:"$dir_path/."
-  echo "============================== running on server ==============================="
-  ssh buffet "export PYTHONPATH='../:.'; cd ml4t/$dir; python $1" 
-}
-
 function dcl() 
 {
   docker-compose -f local.yml $@ 

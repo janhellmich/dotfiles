@@ -2,8 +2,6 @@
 alias reloaddns="dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
 alias weather="curl -4 http://wttr.in"
 alias shrug="echo '¯\_(ツ)_/¯' | pbcopy"
-alias ali="vim $HOME/.aliases.sh"
-alias func="vim $HOME/.functions.sh"
 
 # SSH aliases
 alias copyssh="pbcopy < $HOME/.ssh/id_rsa.pub"
@@ -39,7 +37,9 @@ alias gco="git checkout"
 alias gb="git branch"
 
 # Profile aliases
-alias prof="vim ~/.zshrc"
+alias ali="vim $HOME/.aliases.sh"
+alias func="vim $HOME/.functions.sh"
+alias prof="vim ~/.unsynced.sh"
 alias reprof=". ~/.zshrc"
 
 # Navigation aliases

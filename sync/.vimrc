@@ -12,7 +12,13 @@ colorscheme solarized
 syntax enable
 
 " copy and past to system clipboard
-set clipboard=unnamed
+if has("clipboard")
+  set clipboard=unnamed " copy to the system clipboard
+
+  if has("unnamedplus") " X11 support
+    set clipboard+=unnamedplus
+  endif
+endif
 
 " backspace behavior
 set backspace=indent,eol,start
