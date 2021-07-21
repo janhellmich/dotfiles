@@ -32,44 +32,28 @@ brew install grep
 brew install git
 brew install tmux
 brew install tree
-brew install mackup
-brew install mas
 brew install node
 brew install npm
 brew install python3
-brew install trash
 brew install wget
 brew install jq
 brew install vim
+brew install neovim
 brew install the_silver_searcher
 brew install fzf
 # To install useful key bindings and fuzzy completion:
 $(brew --prefix)/opt/fzf/install
 
 # Apps
-brew cask install atom
 brew cask install docker
-brew cask install firefox
-brew cask install flux
-brew cask install dropbox
 brew cask install google-chrome
 brew cask install iterm2
-brew cask install keepingyouawake
-brew cask install sequel-pro
 brew cask install slack
 brew cask install spectacle
 brew cask install spotify
-brew cask install torbrowser
-brew cask install visual-studio-code
-brew cask install vlc
-brew cask install qbittorrent
 
 # Fonts
 brew cask install font-source-code-pro-for-powerline
 brew cask install font-source-code-pro
 brew cask install font-source-sans-pro
 brew cask install font-source-serif-pro
-
-# Install Mac App Store apps
-mas '1Password', id: 443987910
-mas 'Kiwi for Gmail', id: 986304488

@@ -1,6 +1,6 @@
 # DOTFILES folder
 export DOTFILES=$HOME/dotfiles
-export EDITOR=vim
+export EDITOR=nvim
 
 # FZF fuzzy search
 export FZF_DEFAULT_OPTS='--height 40% --border'

@@ -1,3 +1,6 @@
+# Editor
+alias vim="nvim"
+
 # Shortcuts
 alias reloaddns="dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
 alias weather="curl -4 http://wttr.in"
@@ -41,20 +44,6 @@ alias ali="vim $HOME/.aliases.sh"
 alias func="vim $HOME/.functions.sh"
 alias prof="vim ~/.unsynced.sh"
 alias reprof=". ~/.zshrc"
-
-# Navigation aliases
-alias c="cd ~/code"
-alias db="cd ~/Dropbox"
-alias dl="cd ~/Downloads"
-alias dt="cd ~/Desktop"
-alias ms="cd ~/code/monetis"
-alias oms="cd ~/code/omscs"
-alias ns="cd ~/code/omscs/network_security"
-
-# Directories
-alias dotfiles="cd $DOTFILES"
-alias library="cd $HOME/Library"
-alias sites="cd $HOME/Sites"
 
 # show/hide hidden files
 alias killFinder='killall Finder /System/Library/CoreServices/Finder.app'
