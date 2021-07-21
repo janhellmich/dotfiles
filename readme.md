@@ -2,7 +2,7 @@
 
 ## Set up a new mac from scratch
 
-1. clone this repo and cd into it: `git clone --recurse-submodules git@github.com:janhellmich/dotfiles.git ~/dotfiles`
+1. clone this repo and cd into it: `git clone git@github.com:janhellmich/dotfiles.git ~/dotfiles`
 1. run `source setup/brew.sh` to setup homebrew and some initial binaries / apps
 1. you can run `bash setup/symlink.sh` to setup the dotfiles
   - use the `-d` flag for detached mode. This will copy files vs. symlink them
