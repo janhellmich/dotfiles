@@ -19,6 +19,8 @@ else # macOS `ls`
 	export LSCOLORS='bxfxcxdxgxegedabagacad'
 fi
 
+# avoid the -i flag set by pretzo
+alias rm="nocorrect rm"
 # List all files colorized in long format
 alias l="ls -lF ${colorflag}"
 # List all files colorized in long format, including dot files
