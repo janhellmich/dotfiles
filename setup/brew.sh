@@ -11,8 +11,8 @@ brew update
 brew tap homebrew/bundle
 
 # Taps
-brew tap caskroom/cask
-brew tap caskroom/fonts
+brew tap homebrew/cask
+brew tap homebrew/cask-fonts
 brew tap homebrew/bundle
 
 # Install ZSH
@@ -36,24 +36,25 @@ brew install node
 brew install npm
 brew install python3
 brew install wget
+brew install ripgrep
 brew install jq
+brew install fd
+brew install bat
 brew install vim
 brew install neovim
 brew install the_silver_searcher
 brew install fzf
+
 # To install useful key bindings and fuzzy completion:
 $(brew --prefix)/opt/fzf/install
 
 # Apps
-brew cask install docker
-brew cask install google-chrome
-brew cask install iterm2
-brew cask install slack
-brew cask install spectacle
-brew cask install spotify
+brew install --cask docker
+brew install --cask google-chrome
+brew install --cask iterm2
+brew install --cask slack
+brew install --cask spectacle
+brew install --cask spotify
 
 # Fonts
-brew cask install font-source-code-pro-for-powerline
-brew cask install font-source-code-pro
-brew cask install font-source-sans-pro
-brew cask install font-source-serif-pro
+brew install --cask font-hack-nerd-font
