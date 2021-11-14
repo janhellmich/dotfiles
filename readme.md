@@ -14,7 +14,7 @@
    properly
 1. to install solarized color scheme, use this: https://github.com/lifepillar/vim-solarized8
 1. setup tmux plugin manager by following this: https://github.com/tmux-plugins/tpm
-1. [Optional] run `source bash/macos.sh` to configure mac rettings
+1. [Optional] run `bash setup/macos.sh` to configure mac settings
 1. restart
 
 

@@ -39,14 +39,6 @@ sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo Hos
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input                 #
 ###############################################################################
 
-# Trackpad: enable tap to click for this user and for the login screen
-defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
-defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
-defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
-
-# Increase sound quality for Bluetooth headphones/headsets
-defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40
-
 # Disable press-and-hold for keys in favor of key repeat
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
@@ -103,39 +95,8 @@ defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
 # Dock, Dashboard, and hot corners                                            #
 ###############################################################################
 
-# Enable highlight hover effect for the grid view of a stack (Dock)
-defaults write com.apple.dock mouse-over-hilite-stack -bool true
-
-# Set the icon size of Dock items to 36 pixels
-defaults write com.apple.dock tilesize -int 36
-
-# Set the maginfication size to 96 pixels
-defaults write com.apple.dock largesize -int 96
-
-# Show indicator lights for open applications in the Dock
-defaults write com.apple.dock show-process-indicators -bool true
-
 # Remove the auto-hiding Dock delay
 defaults write com.apple.dock autohide-delay -float 0
-
-# Automatically hide and show the Dock
-defaults write com.apple.dock autohide -bool true
-
-# Add a spacer to the right side of the Dock (where the Trash is)
-defaults write com.apple.dock persistent-others -array-add '{tile-data={}; tile-type="spacer-tile";}'
-
-###############################################################################
-# Mail                                                                        #
-###############################################################################
-
-# Copy email addresses as `foo@example.com` instead of `Foo Bar <foo@example.com>` in Mail.app
-defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
-
-# Add the keyboard shortcut ⌘ + Enter to send an email in Mail.app
-defaults write com.apple.mail NSUserKeyEquivalents -dict-add "Send" "@\U21a9"
-
-# Disable inline attachments (just show the icons)
-defaults write com.apple.mail DisableInlineAttachmentViewing -bool true
 
 ###############################################################################
 # Terminal & iTerm 2                                                          #
@@ -143,16 +104,6 @@ defaults write com.apple.mail DisableInlineAttachmentViewing -bool true
 
 # Don’t display the annoying prompt when quitting iTerm
 defaults write com.googlecode.iterm2 PromptOnQuit -bool false
-
-###############################################################################
-# Time Machine                                                                #
-###############################################################################
-
-# Prevent Time Machine from prompting to use new hard drives as backup volume
-defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
-
-# Disable local Time Machine backups
-hash tmutil &> /dev/null && sudo tmutil disablelocal
 
 ###############################################################################
 # Activity Monitor                                                            #
@@ -170,31 +121,6 @@ defaults write com.apple.ActivityMonitor ShowCategory -int 0
 # Sort Activity Monitor results by CPU usage
 defaults write com.apple.ActivityMonitor SortColumn -string "CPUUsage"
 defaults write com.apple.ActivityMonitor SortDirection -int 0
-
-###############################################################################
-# Mac App Store                                                               #
-###############################################################################
-
-# Enable the automatic update check
-defaults write com.apple.SoftwareUpdate AutomaticCheckEnabled -bool true
-
-# Check for software updates daily, not just once per week
-defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
-
-# Download newly available updates in background
-defaults write com.apple.SoftwareUpdate AutomaticDownload -int 1
-
-# Install System data files & security updates
-defaults write com.apple.SoftwareUpdate CriticalUpdateInstall -int 1
-
-# Automatically download apps purchased on other Macs
-defaults write com.apple.SoftwareUpdate ConfigDataInstall -int 1
-
-# Turn on app auto-update
-defaults write com.apple.commerce AutoUpdate -bool true
-
-# Allow the App Store to reboot machine on macOS updates
-defaults write com.apple.commerce AutoUpdateRestartRequired -bool true
 
 ###############################################################################
 # Photos                                                                      #

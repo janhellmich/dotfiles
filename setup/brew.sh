@@ -6,6 +6,9 @@ if test ! $(which brew); then
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
+# init brew
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # Install homebrew packages
 brew update
 brew tap homebrew/bundle
@@ -47,14 +50,6 @@ brew install fzf
 
 # To install useful key bindings and fuzzy completion:
 $(brew --prefix)/opt/fzf/install
-
-# Apps
-brew install --cask docker
-brew install --cask google-chrome
-brew install --cask iterm2
-brew install --cask slack
-brew install --cask spectacle
-brew install --cask spotify
 
 # Fonts
 brew install --cask font-hack-nerd-font

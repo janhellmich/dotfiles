@@ -8,6 +8,9 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
+# init brew
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # Load the shell dotfiles
 # Note: This is currently done at the end since the ls command otherwise gets overwritten by zsh syntax highlighting
 for file in ~/.{path,exports,aliases,functions,unsynced}.sh; do
