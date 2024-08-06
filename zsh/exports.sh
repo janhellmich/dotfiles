@@ -1,5 +1,3 @@
-# DOTFILES folder
-export DOTFILES=$HOME/dotfiles
 export EDITOR=nvim
 
 # FZF fuzzy search

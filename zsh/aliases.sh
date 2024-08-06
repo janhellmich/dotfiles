@@ -44,7 +44,7 @@ alias gb="git branch"
 # Profile aliases
 alias ali="vim $HOME/.aliases.sh"
 alias func="vim $HOME/.functions.sh"
-alias prof="vim ~/.unsynced.sh"
+alias prof="vim ~/.zshrc"
 alias reprof=". ~/.zshrc"
 
 # show/hide hidden files

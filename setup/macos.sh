@@ -42,7 +42,7 @@ sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo Hos
 # Disable press-and-hold for keys in favor of key repeat
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
-# Set a blazingly fast keyboard repeat rate
+# Set a fast keyboard repeat rate
 defaults write NSGlobalDomain KeyRepeat -int 2
 defaults write NSGlobalDomain InitialKeyRepeat -int 15
 
@@ -76,12 +76,6 @@ defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 # Disable the warning when changing a file extension
 defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 
-# Enable spring loading for directories
-defaults write NSGlobalDomain com.apple.springing.enabled -bool true
-
-# Remove the spring loading delay for directories
-defaults write NSGlobalDomain com.apple.springing.delay -float 1
-
 # Enable snap-to-grid for icons on the desktop and in other icon views
 /usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
 /usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
@@ -97,13 +91,6 @@ defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
 
 # Remove the auto-hiding Dock delay
 defaults write com.apple.dock autohide-delay -float 0
-
-###############################################################################
-# Terminal & iTerm 2                                                          #
-###############################################################################
-
-# Don’t display the annoying prompt when quitting iTerm
-defaults write com.googlecode.iterm2 PromptOnQuit -bool false
 
 ###############################################################################
 # Activity Monitor                                                            #

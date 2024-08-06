@@ -14,13 +14,7 @@ brew update
 brew tap homebrew/bundle
 
 # Taps
-brew tap homebrew/cask
 brew tap homebrew/cask-fonts
-brew tap homebrew/bundle
-
-# Install ZSH
-brew install zsh
-brew install zsh-syntax-highlighting
 
 # Install GNU core utilities (those that come with macOS are outdated)
 brew install coreutils
@@ -33,23 +27,21 @@ brew install grep
 
 # Install Binaries
 brew install git
-brew install tmux
-brew install tree
 brew install node
 brew install npm
-brew install python3
+brew install nvm
+brew install pyenv
 brew install wget
 brew install ripgrep
 brew install jq
 brew install fd
-brew install bat
-brew install vim
-brew install neovim
-brew install the_silver_searcher
 brew install fzf
+brew install the_silver_searcher
+brew install bat
+brew install neovim
 
 # To install useful key bindings and fuzzy completion:
 $(brew --prefix)/opt/fzf/install
 
 # Fonts
-brew install --cask font-hack-nerd-font
+brew install --cask font-jetbrains-mono
