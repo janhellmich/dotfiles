@@ -40,6 +40,7 @@ alias egrep='egrep --color=auto'
 alias gst="git status"
 alias gco="git checkout"
 alias gb="git branch"
+alias gcb="git branch --sort=-committerdate | fzf --no-multi | xargs git checkout"
 
 # Profile aliases
 alias ali="vim $HOME/.aliases.sh"
