@@ -6,7 +6,6 @@ source ~/Repos/znap/znap.zsh  # Start Znap
 
 znap prompt sindresorhus/pure
 
-# znap source zsh-users/zsh-autosuggestions
 znap source zsh-users/zsh-syntax-highlighting
 znap source zsh-users/zsh-autosuggestions
 
